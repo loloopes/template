@@ -1,0 +1,35 @@
+{
+  "name": "graphql-serverless-template",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "package": "turbo run package",
+    "deploy:development": "turbo run deploy:development",
+    "deploy:production": "turbo run deploy:production",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "migrations": "knex --env local --knexfile knexfile.js migrate:latest",
+    "migrations:down": "knex --env local migrate:down",
+    "seeds": "knex --env local --knexfile knexfile.js seed:run"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "3.29.0",
+    "@types/aws-lambda": "8.10.114",
+    "@types/node": "18.15.11",
+    "dotenv-cli": "7.2.1",
+    "ts-node": "10.9.1",
+    "turbo": "latest",
+    "typescript": "5.0.3"
+  },
+  "dependencies": {
+    "aws-lambda": "1.0.7",
+    "knex": "2.4.2",
+    "pg": "8.11.0"
+  }
+}

@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# turbo
+.turbo
+
+#dist
+dist/
+
+#lock
+package-lock.json
+
+# serverless 
+.build
+.serverless
+.esbuild

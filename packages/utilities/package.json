@@ -1,0 +1,22 @@
+{
+  "name": "utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nic-jennings/sql-datasource": "0.0.7",
+    "knex": "2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.1",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "typescript": "5.0.4"
+  }
+}
